@@ -27,7 +27,6 @@ void createSubClass()
     NSLog(@"Class List: %@", classList);
     id littleYak = [[Yak alloc] init];
     [littleYak yell];
-    objc_disposeClassPair(Yak);
 }
 
 
