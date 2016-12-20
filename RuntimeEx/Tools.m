@@ -51,5 +51,24 @@
     else return nil;
 }
 
++ (NSArray *)obtainMethodList:(Class)currentClass
+{
+    unsigned int methodCount = 0;
+    NSMutableArray *methodArr = [NSMutableArray array];
+    // 这个方法会返回指定类中，所有实例方法，包括重写的方法，例如你重写了init；
+    // 并包括所有属性的getter&setter方法
+    Method *methods = class_copyMethodList(currentClass, &methodCount);
+    for (int i = 0; i < methodCount; i++)
+    {
+        Method temp = methods[i];
+        SEL sel = method_getName(temp);
+        NSString *methodName = NSStringFromSelector(sel);
+        [methodArr addObject:methodName];
+    }
+    free(methods);
+    return [methodArr copy];
+}
+
+
 
 @end

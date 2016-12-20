@@ -14,4 +14,6 @@
 
 + (Class)createSubClassWithName:(NSString *)className OfSuperClass:(Class)superClass;
 
++ (NSArray *)obtainMethodList:(Class)currentClass;
+
 @end

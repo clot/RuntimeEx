@@ -10,6 +10,7 @@
 #import "CowHeader.h"
 #import <objc/runtime.h>
 #import "Tools.h"
+#import "TestMethod.h"
 
 
 void getSubClassList()
@@ -29,6 +30,12 @@ void createSubClass()
     [littleYak yell];
 }
 
+void testGetInstanceMethodList()
+{
+    NSArray *methodList = [Tools obtainMethodList:[TestMethod class]];
+    NSLog(@"methodList: %@", methodList);
+}
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -36,6 +43,8 @@ int main(int argc, const char * argv[]) {
         getSubClassList();
         
         createSubClass();
+        
+        testGetInstanceMethodList();
     }
     return 0;
 }

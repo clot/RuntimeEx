@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		82DF750A1E0953A500D188C4 /* TestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 82DF75091E0953A500D188C4 /* TestMethod.m */; };
 		D2E15F891DFC478E00AF10AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E15F881DFC478E00AF10AD /* main.m */; };
 		D2E15F991DFC481600AF10AD /* Buffalo.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E15F911DFC481600AF10AD /* Buffalo.m */; };
 		D2E15F9A1DFC481600AF10AD /* Bull.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E15F931DFC481600AF10AD /* Bull.m */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		82DF75081E0953A500D188C4 /* TestMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMethod.h; sourceTree = "<group>"; };
+		82DF75091E0953A500D188C4 /* TestMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMethod.m; sourceTree = "<group>"; };
 		D2E15F851DFC478E00AF10AD /* RuntimeEx */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RuntimeEx; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2E15F881DFC478E00AF10AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D2E15F901DFC481600AF10AD /* Buffalo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffalo.h; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				D2E15F941DFC481600AF10AD /* CowHeader.h */,
 				D2E15F951DFC481600AF10AD /* CowObject.h */,
 				D2E15F961DFC481600AF10AD /* CowObject.m */,
+				82DF75081E0953A500D188C4 /* TestMethod.h */,
+				82DF75091E0953A500D188C4 /* TestMethod.m */,
 			);
 			path = CowObject;
 			sourceTree = "<group>";
@@ -151,6 +156,7 @@
 			files = (
 				D2E15F9A1DFC481600AF10AD /* Bull.m in Sources */,
 				D2E15F9F1DFC487600AF10AD /* Tools.m in Sources */,
+				82DF750A1E0953A500D188C4 /* TestMethod.m in Sources */,
 				D2E15F891DFC478E00AF10AD /* main.m in Sources */,
 				D2E15F9B1DFC481600AF10AD /* CowObject.m in Sources */,
 				D2E15F991DFC481600AF10AD /* Buffalo.m in Sources */,
@@ -280,6 +286,7 @@
 				D2E15F8E1DFC478E00AF10AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
